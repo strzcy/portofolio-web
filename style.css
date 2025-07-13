@@ -1,0 +1,49 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.gbr img {
+    width: 5%;
+}
+
+header {
+    background-color: pink;
+    padding: 15px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li { 
+    align-items: center;
+    display: inline-block;
+    padding: 4px;
+}
+
+header nav a {
+    text-decoration: none;
+}
+
+.A .a {
+    display: grid;
+    background-color: yellowgreen;
+    gap: 20px;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+    padding-left: 90px;
+    padding-right: 90px;
+}
+
+.A .a .about {
+    text-align: center;
+}
+
+
+.A .a p {
+    text-align: justify;
+}
