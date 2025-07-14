@@ -43,7 +43,34 @@ header nav a {
     text-align: center;
 }
 
-
 .A .a p {
     text-align: justify;
+}
+
+button {
+    border-style: none;
+    padding: 3px;
+    border-radius: 30px;
+}
+
+div.edu {
+    background-color: #fff;
+    border-style: dashed;
+    border-color: orange;
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 5px;
+}
+div.edu h3 {
+    font-size: 13px;
+    font-weight: normal;
+}
+div.edu h4 {
+    font-size: 11px;
+    font-weight: normal;
+}
+
+div.edu h5{
+    font-size: 9px;
+    font-weight: normal;
 }
