@@ -5,6 +5,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'TTInterphases';
+    src: url('TTInterphasesProTrialMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 *{
     padding: 0px;
     margin: 0px;
