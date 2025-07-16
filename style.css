@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'TTRamilas';
+    src: url('TTRamillasTrialRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     padding: 0px;
     margin: 0px;
