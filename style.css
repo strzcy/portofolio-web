@@ -16,17 +16,28 @@
 *{
     padding: 0px;
     margin: 0px;
+    font-family: 'TTInterphases', 'TTRamilas';
+    color: #464a4e;
+}
+
+section {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .gbr img {
     width: 5%;
 }
 
+
+
 header {
-    background-color: pink;
+    background-color: #e6e5e5;
     padding: 15px;
     padding-left: 90px;
     padding-right: 90px;
+    
 }
 nav {
     display: flex;
@@ -45,36 +56,101 @@ header nav a {
 
 .A .a {
     display: grid;
-    background-color: yellowgreen;
     gap: 20px;
     align-items: center;
     grid-template-columns: 1fr 1fr;
     padding: 20px;
     padding-left: 90px;
     padding-right: 90px;
+    /* margin-top: 20px; */
 }
 
 .A .a .about {
     text-align: center;
 }
 
-.A .a p {
+.A p.a  {
     text-align: justify;
 }
 
+.A p.em {
+    line-height: 25px ;
+    padding-bottom: 2px;
+}
+
+
+h2.LL {
+    margin-top: 60px;
+    text-align: center;
+}
+
+h2#skill {
+    margin-bottom: 20px;
+
+}
+
+
+
+.A h2#about{
+    font-size: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-family: 'TTRamilas';
+}
 button {
-    border-style: none;
-    padding: 3px;
+    padding: 10px;
     border-radius: 30px;
+    border: 1px solid #464a4e;
+background-color: #efefef;
 }
 
 div.edu {
-    background-color: #fff;
-    border-style: dashed;
-    border-color: orange;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding-top: 12px;
+    gap: 2px;
+    align-items: stretch;
+    
+}
+
+div.teks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    
+}
+
+.soft , .bg {
+    background-color: #e6e5e5;
     border-radius: 5px;
-    padding: 8px;
-    margin-top: 5px;
+    border: 1px solid #464a4e;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg {
+    padding: 9px;
+}
+
+.sskil{
+    text-align: center;
+    font-size: 10px;
+    padding-bottom: 2px;
+    padding-top: 2px;
+}
+p.sski {
+    text-align: center;
+    font-size: 5px;
+}
+
+
+div.edu img {
+    padding-top: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
 }
 div.edu h3 {
     font-size: 13px;
@@ -88,4 +164,125 @@ div.edu h4 {
 div.edu h5{
     font-size: 9px;
     font-weight: normal;
+}
+
+.B, .C, .D {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+.B {
+    padding-top: 10px;
+}
+
+.qq {
+    display: grid;
+    grid-template-columns: 300fr 1fr 300fr;
+    gap: 5px;
+    margin-bottom: 0;
+}
+.x {
+    text-align: right;
+}
+.y {
+    background-color: #464a4e;
+}
+.z {
+    text-align: left;
+}
+
+div.op {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.D div.ojek {
+    background-color: #efefef;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 5px solid #464a4e;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.D img {
+    width: 80px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #e6e5e5;
+}
+
+
+
+
+
+
+
+
+
+
+.timeline {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 39px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1px;
+  height: 100%;
+  background: #464a4e;
+}
+
+.item {
+  position: relative;
+  width: 50%;
+  padding: 20px 20px;
+  box-sizing: border-box;
+}
+
+.item .dot {
+  position: absolute;
+  top: 25px;
+  width: 14px;
+  height: 14px;
+  background: #464a4e;
+  border-radius: 50%;
+  z-index: 1;
+  left: 100%; /* nanti di-overwrite oleh .right */
+  transform: translateX(-50%);
+}
+
+.item .content {
+  /* background: #f3f3f3; */
+  padding: 15px;
+  padding-bottom: 0;
+  border-radius: 6px;
+}
+
+.item.left {
+  left: 0;
+  text-align: right;
+}
+
+.item.left .dot {
+  left: 100%;
+}
+
+.item.right {
+  left: 50%;
+  text-align: left;
+}
+
+.item.right .dot {
+  left: 0;
 }
