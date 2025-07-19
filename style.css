@@ -212,9 +212,32 @@ div.op {
 
 footer {
     text-align: center;
-    padding: 10px;
+    padding: 25px;
     background-color: #e6e5e5;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    font-size: 12px;
 }
+.quicklinks a, .sosmed a {
+    text-decoration: none;
+}
+
+.main {
+    border-left: 1px solid #464a4e;
+    border-right: 1px solid #464a4e;
+}
+
+.main p {
+    opacity: 50%;
+}
+
+.logo {
+    display: none;
+}
+
+
+
+
 
 
 
@@ -285,4 +308,76 @@ footer {
 
 .item.right .dot {
   left: 0;
+}
+
+
+
+
+
+@media (max-width: 850px) {
+    footer {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    .A .a {
+        display: block;
+        text-align: center;
+    }
+
+    .miau {
+        margin-bottom: 100px;
+    }
+
+    .gbr img {
+        width: 7%;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+    footer {
+        grid-template-columns: 1fr 1fr;
+    }
+    .main, header h2, span {
+        display: none;
+    }
+    header nav ul {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    header, .A .a {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    
+}
+@media (max-width: 404px) {
+    .logo {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 0;
+    }
+    .logo img {
+        
+        width: 50%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    footer {
+        display: block;
+    }
+    .quicklinks, .main, .sosmed {
+        display: none;
+    }
+    ar{
+        font-size: 20px;
+    }
 }
