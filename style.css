@@ -1,13 +1,13 @@
 @font-face {
     font-family: 'TTRamilas';
-    src: url('TTRamillasTrialRegular.ttf') format('truetype');
+    src: url('font/TTRamillasTrialRegular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'TTInterphases';
-    src: url('TTInterphasesProTrialMedium.ttf') format('truetype');
+    src: url('font/TTInterphasesProTrialMedium.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -234,6 +234,12 @@ footer {
 .logo {
     display: none;
 }
+#Project {
+    margin-bottom: 20px;
+}
+
+
+
 
 
 
@@ -262,7 +268,7 @@ footer {
   left: 50%;
   transform: translateX(-50%);
   width: 1px;
-  height: 100%;
+  height: 99%;
   background: #464a4e;
 }
 
@@ -310,7 +316,12 @@ footer {
   left: 0;
 }
 
-
+.hhhhh {
+    font-size: 17px;
+}
+div.content p {
+   font-size: 14px; 
+}
 
 
 
@@ -377,7 +388,7 @@ footer {
     .quicklinks, .main, .sosmed {
         display: none;
     }
-    ar{
-        font-size: 20px;
+    .timeline {
+        font-size: 13px;
     }
 }
