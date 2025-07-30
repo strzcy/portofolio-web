@@ -240,9 +240,15 @@ footer {
     margin-bottom: 20px;
 }
 
+button:hover {
+    background-color: #e6e5e5;
+    box-shadow: 1px #464a4e;
+    transition: 0.3s;
+}
 
-
-
+b {
+    font-weight: normal;
+}
 
 
 
@@ -395,5 +401,8 @@ div.content p {
     }
     .timeline {
         font-size: 13px;
+    }
+    b {
+        display: none;
     }
 }
