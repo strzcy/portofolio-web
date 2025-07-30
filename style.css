@@ -127,6 +127,7 @@ div.teks {
     border: 1px solid #464a4e;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease;
 }
 
 .bg {
@@ -246,9 +247,52 @@ button:hover {
     transition: 0.3s;
 }
 
-b {
+b, strong {
     font-weight: normal;
 }
+
+.bg:hover,
+.soft:hover, .gbr img:hover {
+    transform: translateY(-4px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.ojek, .gbr img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.ojek:hover {
+    transform: scale(1.02);
+}
+
+h6:hover, .D p a:hover {
+    color: black;
+}
+
+
+
+header a, footer a {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+header a::after, footer a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.4s ease; 
+  transform: translateX(-50%);
+}
+
+header a:hover::after, footer a:hover::after {
+  width: 100%; 
+}
+
 
 
 
@@ -340,6 +384,10 @@ div.content p {
     .A .a {
         display: block;
         text-align: center;
+    }
+
+    strong {
+        display: none;
     }
 
     .miau {
