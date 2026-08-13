@@ -293,19 +293,6 @@ header a:hover::after, footer a:hover::after {
   width: 100%; 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .timeline {
   position: relative;
   width: 100%;
@@ -324,23 +311,33 @@ header a:hover::after, footer a:hover::after {
   background: #464a4e;
 }
 
+
 .item {
-  position: relative;
-  width: 50%;
-  padding: 20px 20px;
-  box-sizing: border-box;
+    position: relative;
+    width: 50%;
+    /* padding: 20px 20px; */
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.item.sertif {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
 
 .item .dot {
-  position: absolute;
-  top: 25px;
-  width: 14px;
-  height: 14px;
-  background: #464a4e;
-  border-radius: 50%;
-  z-index: 1;
-  left: 100%; /* nanti di-overwrite oleh .right */
-  transform: translateX(-50%);
+    position: absolute;
+    top: 21px;
+    width: 14px;
+    height: 14px;
+    background: #464a4e;
+    border-radius: 50%;
+    z-index: 1;
+    left: 100%; /* nanti di-overwrite oleh .right */
+    transform: translateX(-50%);
 }
 
 .item .content {
@@ -427,10 +424,13 @@ div.content p {
 }
 @media (max-width: 404px) {
     .logo {
-        display: grid;
+        display: flex;
+        gap: 0px;
+        /* display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        gap: 0;
+        gap: 0; */
     }
+
     .logo img {
         
         width: 50%;
@@ -441,6 +441,12 @@ div.content p {
         text-align: center;
         justify-content: center;
     }
+
+    .Logo img :hover{
+        text-decoration: none;
+        transform: scale(1.1);
+    }
+
     footer {
         display: block;
     }
