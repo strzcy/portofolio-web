@@ -167,7 +167,7 @@ div.edu h5{
     font-weight: normal;
 }
 
-.B, .C, .D {
+.B, .C{
     text-align: center;
     padding-top: 60px;
     padding-bottom: 30px;
@@ -192,25 +192,44 @@ div.edu h5{
     text-align: left;
 }
 
+.D {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+}
+
 .D p {
     padding-bottom: 20px;
-    padding-left: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+
+.D #Project {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .D div.ojek {
     background-color: #efefef;
-    max-width: 500px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    max-width: none;
+    margin: 0;
     border-left: 5px solid #464a4e;
     border-radius: 10px;
     margin-bottom: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .D img {
-    margin: 20px;
-    width: 300px;
-
+    display: block;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    height: auto;
+    margin: 20px auto;
 }
 
 footer {
@@ -268,6 +287,9 @@ b, strong {
 h6:hover, .D p a:hover {
     color: black;
 }
+
+
+
 
 
 
@@ -372,7 +394,17 @@ div.content p {
    font-size: 14px; 
 }
 
+.op#op {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
 
+section.op {
+    max-width: none;
+}
 
 @media (max-width: 850px) {
     footer {
@@ -381,6 +413,16 @@ div.content p {
     .A .a {
         display: block;
         text-align: center;
+    }
+
+    
+    .op#op {
+        padding-left: 20px;
+        padding-right: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        align-items: stretch;
     }
 
     strong {
@@ -404,6 +446,13 @@ div.content p {
     }
     .main, header h2, span {
         display: none;
+    }
+
+    .op#op {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 20px;
+        align-items: stretch;
     }
     header nav ul {
         display: block;
@@ -429,6 +478,13 @@ div.content p {
         /* display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 0; */
+    }
+
+    .op#op {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 20px;
+        align-items: stretch;
     }
 
     .logo img {
